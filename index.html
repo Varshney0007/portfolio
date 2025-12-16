@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="logo">MyPortfolio</a>
+      <ul class="nav-links">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Krish Varshney</h1>
+      <p>Web Developer passionate about building clean and responsive websites.</p>
+      <a href="#contact" class="btn">https://github.com/Varshney0007</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpeg" alt="Your profile photo" />
+    </div>
+  </section>
+
+  <!-- Bio -->
+  <section id="bio" class="section">
+    <div class="container">
+      <h2>Bio</h2>
+      <p>
+        I am a developer who loves creating modern, user‑friendly web applications.
+        My focus is on clean code, accessibility, and performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-grid">
+        <li class="skill-card">
+          <h3>React</h3>
+          <p>Components, hooks, state management.</p>
+        </li>
+        <li class="skill-card">
+          <h3>Design</h3>
+          <p>UI patterns, color systems, component libraries.</p>
+        </li>
+        <li class="skill-card">
+          <h3>Node.js and Next.js</h3>
+          <p>Server-side development, Express.js, REST APIs.</p>
+        </li>
+        <li class="skill-card">
+          <h3>Machine Learning and AI</h3>
+          <p>Python, TensorFlow, PyTorch, data analysis.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <article class="experience-item">
+        <h3>Web Developer Intern — Delhi Metro Rail Cooperation</h3>
+        <span class="exp-meta">May 2025– July 2025</span>
+        <ul>
+          <li>Built responsive Vendor Portal system.</li>
+          <li>Collaborated with team members to enhance user experience.</li>
+        </ul>
+      </article>
+      <article class="experience-item">
+        <h3>Machine Learning Engineer — Unified Mentor pvt limited</h3>
+        <span class="exp-meta">Jan 2025–Apr 2025</span>
+        <ul>
+          <li>Developed a machine learning model for Heart Disease Detection.</li>
+          <li>Implemented data preprocessing and CNN model evaluation techniques.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+<!-- Projects -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Sensai- Ai career coach</h3>
+        <p>Developed a Webapp using React and Nodejs with real-time quiz functionality and personalized insights.</p>
+        <a href="https://github.com/Varshney0007/sensai.git" target="_blank" class="btn">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Diet Recommendation System</h3>
+        <p>Developed a CNN-based system to recommend diets based on demographic and biometric inputs.</p>
+        <a href="https://github.com/Varshney0007/diet_recommendation.git" target="_blank" class="btn">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Vendor Portal</h3>
+        <p>A responsive vendor portal system built with php admin panel and React.</p>
+        <a href="https://github.com/Varshney0007/vendor_portal.git" target="_blank" class="btn">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Heart Disease Detection</h3>
+        <p>A machine learning model for detecting heart disease using Python and TensorFlow.</p>
+        <a href="https://github.com/Varshney0007/Heart_Disease.git" target="_blank" class="btn">View Repository</a>
+      </div>
+      <div class="project-card">
+        <h3>Movie Analysis Dashboard</h3>
+        <p>A dashboard for analyzing movie data using Power BI.</p>
+        <a href="https://github.com/Varshney0007/Movie_Dashboard.gits" target="_blank" class="btn">View Repository</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> krishvarshney8869@gmail.com</p>
+        <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/krish-varshney-238112302</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> By Krish Varshney.All rights reserved.</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
